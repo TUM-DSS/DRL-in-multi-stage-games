@@ -2,11 +2,13 @@
 
 
 ---
-# Learning in Continuous Sequential Bayesian Games
+# SEGA-RL: Sequential Economic Game Analysis with Reinforcement Learning
 
-This project implements a set of sequential games with continuous state and action spaces and makes use of multi-agent reinforcement learning to compute optimal strategies. In particular we look at sequential sales [(Krishna 2003, Chapter 15)](https://www.sciencedirect.com/book/9780124262973/auction-theory) and a signaling contest [(Zhang, 2008)](https://ideas.repec.org/p/qed/wpaper/1184.html) market. Some smaller toy examples, such as a soccer simulation (credit to Alexander Neitz) and rock-paper-scissors are also implemented.
+This project implements a set of sequential games allowing for continuous state and action spaces and makes use of multi-agent reinforcement learning to compute approximate equilibrium strategies. In particular we look at sequential sales [(Krishna 2003, Chapter 15)](https://www.sciencedirect.com/book/9780124262973/auction-theory), a signaling contest [(Zhang, 2008)](https://ideas.repec.org/p/qed/wpaper/1184.html) market, and a Stackelberg Bertrand competition [Arozamena and Weinschelbaum, 2009](https://www.sciencedirect.com/science/article/abs/pii/S0165176509000925). Some smaller toy examples, such as a soccer simulation (credit to Alexander Neitz) and rock-paper-scissors are also implemented.
 
 The base algorithms are vendored from [StableBaselines3](https://github.com/DLR-RM/stable-baselines3) and the environment interface is a multiagent extension of [OpenAI's gym](https://github.com/openai/gym) framework.
+
+
 
 
 ## Features
@@ -177,17 +179,17 @@ __Add learner to algorithm selection:__ Import your learner class in `src.utils.
 ---
 # Maintainers and suggested citation
 
-This project is maintained by Fabian Pieroth ([@FabianPieroth](https://github.com/FabianPieroth)) and Nils Kohring ([@kohring](https://github.com/kohring)).
+This project is maintained by Fabian Pieroth ([@FabianPieroth](https://github.com/FabianPieroth)) and Janik Bürgermeister ([@janik-buergermeister](https://github.com/janik-buergermeister/)).
 
 If you find this repository helpful and use it in your work, please consider using the following citation:
 
 ```bibtex
-@misc{dss2023,
-  author = {Bichler, Martin and Kohring, Nils and Pieroth, Fabian},
-  title = {Learning in Continuous Sequential Bayesian Games},
-  year = {2023},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/404}}
+@misc{pieroth2025,
+  author = {Pieroth, Fabian and Kohring, Nils and Bichler, Martin},
+  title = {Deep reinforcement learning for equilibrium computation in multi-stage auctions and contests},
+  year = {2025},
+  journal = {Management Science},
+  howpublished = {\url{https://pubsonline.informs.org/doi/10.1287/mnsc.2024.06771}}
 }
 ```
+
